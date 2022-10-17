@@ -18,6 +18,9 @@ padding: 0.5rem 3rem;
     align-items: center;
     width: 100%;
     height: 10vh;
+   
+    
+    
 }
 .social-images>ul{
     display: flex;
@@ -37,6 +40,13 @@ li>img{
     border-radius: 2px;
     background-color: white;
     font-weight: 600;
+    cursor: pointer;
+    transition: 0.6 ease-in;}
+
+.join-btn>button:hover{
+    background-color: #66B966;
+    color: white;
+    border: 1px solid white;
 }
 /** header ends */
 
@@ -45,12 +55,23 @@ li>img{
     display: flex;
     justify-content: space-around;
     align-items: center;
-   margin-top: 1rem;
-   margin-bottom: 1rem;
    width: 100%;
  height: 15vh;
    background-color: white;
+   /* position: fixed;
+   top: 0;
+   overflow: hidden;
+   transition: top 0.3s; */
+
+  
 }
+/* #nav{
+    
+    background-color: #66B966;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+} */
 .nav-bar>div>ul{
     display: flex;
     gap: 2rem;
@@ -65,6 +86,26 @@ width: 10rem;
     text-decoration: none;
     color: black;
     font-weight: 700;
+}
+.nav-bar>div>ul>::after{
+    content:" ";
+    display:block;
+    width: 0%;
+    height: 2px;
+    background-color: #008000 ;
+    transition: 0.3s ease-in-out;
+    margin-top: 0.2rem;
+
+}
+.nav-bar>div>ul>:hover>::after{
+    content:" ";
+    display:block;
+    width: 100%;
+    height: 2px;
+    background-color: #008000 ;
+ 
+    margin-top: 0.2rem;
+
 }
 #home{
     color: #319131;
@@ -152,6 +193,12 @@ height: 1rem;
     border-radius: 2px;
     background-color: white;
     font-weight: 600;
+    transition: 0.6s 
+}
+.j-btn:hover{
+    background-color: #297229;
+    color: white;
+    border: 1px solid white;
 }
 /* *our solution */
 .solution-container{
@@ -177,6 +224,17 @@ height: 1rem;
   margin-top: 5rem;
 padding: 0 10rem;
  
+
+}
+.s-heading>::after{
+content:" ";
+display:block;
+width: 100%;
+height: 3px;
+background-color: #008000 ;
+margin-top: 0.2rem;
+
+
 
 }
 .s-image-container{
@@ -233,6 +291,9 @@ font: bold;
     display: flex;
   margin-top: 5rem;
 padding: 0 10rem;
+flex-wrap: wrap;
+
+
 }
 .c-image>img{
     width: 20rem;
@@ -268,6 +329,14 @@ padding: 0 10rem;
    justify-content: center;
    text-transform: capitalize;
 
+}
+.contact-text>::after{
+    content:" ";
+    display:block;
+    width: 100%;
+    height: 3px;
+    background-color: #008000 ;
+    margin-top: 0.2rem;
 }
 .contact-text>span{
     font-size: 2rem;
@@ -452,4 +521,173 @@ footer{
     width: 15rem;
 
  
+}
+
+/** PATIENT PAGE */
+.patient-bg{
+    background: url(./images/patient-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+position:relative;
+}
+.patient-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+ background: rgba(0, 0, 0, 0.5);
+    ;
+}
+.p-text{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+ align-items:flex-start;
+ height: 100vh;
+ margin-left:4rem ;
+}
+
+.patient-h-text{
+    position: relative;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+   justify-content:start;
+   align-items:center;
+   background-color: #66B966;
+   width: fit-content;
+   gap:1rem;
+   padding: 1rem;
+   border-radius: 5px;
+  
+  
+
+
+}
+
+.patient-h-text>div>span{
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: white;
+   
+}
+.patient-h-text>div>span:nth-child(2){
+    font-weight:bolder ;
+}
+.patient-h-text>div>{
+    display: flex;
+    gap: 3rem;
+    align-items:flex-start ;
+}
+.patient-h-text>p{
+color: white;
+letter-spacing: 1px;
+line-height: 30px;
+font-size: 1.1rem;
+}
+.p-btn{
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 0.5rem;
+  
+  
+    border-radius: 2px;
+ 
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.6 ease-in;
+}
+#footer{
+    margin-top:1rem;
+}
+/* * FACILIY */
+#facility-bg{
+    background:url(./images/facility-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contact-bg{
+    background: url(./images/contact\ -bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover ;
+    height: 100vh;
+}
+.contact-page{
+    margin-top: 4rem;
+}
+.c-content{
+    position: relative;
+    z-index: 20;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    justify-content: center;
+    align-items:center;
+}
+.c-content>.c-form{
+    flex: 1;
+ 
+  
+}
+.c-content>.contact-items{
+flex: 1;}
+.row{
+    display: flex;
+    gap: 1rem;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.col>label{
+    color: white;
+}
+.col>input{
+    width: 100%;
+    height: 2rem;
+    outline: none;
+    border: none;
+    padding-left: 0.2rem;
+    color: black;
+}
+.c-form button{
+    color: #008000;
+    font-weight: bold;
+    cursor: pointer;
+}
+.sub-c-items{
+    background-color: white;
+    border-radius: 5px;
+    width: fit-content;
+    padding: 1rem;
+    color: #297229;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+.items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.items>span{
+    font-weight: bolder;
+}
+.items>img{
+    width:2rem;
+    height: 1.5rem;
+}
+#c-tel{
+height: 2rem;
 }
