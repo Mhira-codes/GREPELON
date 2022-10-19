@@ -10,29 +10,56 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Nunito:wght@300;400&family=Poppins:wght@300;400;500;600;700&family=Square+Peg&family=Trirong:wght@300&display=swap"
       rel="stylesheet"
-    />
+    /> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!-- header -->
     <div class="header-container">
       <div class="social-images">
         <ul>
-          <li><img src="./images/facebook.png" alt="" /></li>
-          <li><img src="./images/instagram.png" alt="" /></li>
-          <li><img src="./images/youtube.png" alt="" /></li>
-          <li><img src="./images/twitter.png" alt="" /></li>
+          <li>
+            <img src="./images/facebook.png" alt="" />
+            <!-- <p>facebook</p> -->
+          </li>
+          <li>
+            <img src="./images/instagram.png" alt="" />
+            <!-- <p>instagram</p> -->
+          </li>
+          <li>
+            <img src="./images/youtube.png" alt="" />
+            <!-- <p>youtube</p> -->
+          </li>
+
+          <li>
+            <img src="./images/twitter.png" alt="" />
+            <!-- <p>twitter</p> -->
+          </li>
         </ul>
       </div>
       <div class="join-btn">
-        <button>Join Waitlist</button>
+        
+          <button >
+            <a href="./join.html">
+              Join Waitlist
+            </a>
+            </button>
+       
       </div>
     </div>
     <!-- nav-bar -->
     <nav class="nav-bar" id="nav">
-      <div><a href="index.html">
-        <img src="./images/logo.png" alt="" />
-      </a></div>
+      <div>
+        <a href="index.html">
+          <img src="./images/logo.png" alt="" />
+        </a>
+      </div>
       <div>
         <ul>
           <li><a href="index.html" id="home">Home</a></li>
@@ -64,7 +91,11 @@
               and patient health.
             </p>
             <div class="j-btn-m">
-              <button class="j-btn">Join Waitlist</button>
+              <a href="./join.html">
+                <button class="j-btn">Join Waitlist</button>
+              </a>
+            
+             
             </div>
           </div>
           <div class="arrow">
@@ -75,12 +106,10 @@
     </div>
     <!-- our solution -->
     <div class="solution-container">
-     
-        <div class="s-heading">
-          <span>Our</span>
-          <span id="s-text">Solutions</span>
-        </div>
-     
+      <div class="s-heading">
+        <span>Our</span>
+        <span id="s-text">Solutions</span>
+      </div>
 
       <div class="sub-s-container">
         <div class="s-image-container">
@@ -119,7 +148,17 @@
           </div>
 
           <div class="s-btn">
-            <button>Join Waitlist</button>
+           
+         
+
+              <button>
+                <a href="./join.html">
+                  Join Waitlist
+                </a>
+               </button>
+           
+            
+            
           </div>
         </div>
       </div>
@@ -134,28 +173,38 @@
             <div>
               <img src="./images/tick.png" alt="" />
               <span
-                >Own the clinic, the client and the revenue, <br>
+                >Own the clinic, the client and the revenue, <br />
                 up to $5,000/month
-              </span>
-            </div>
-            <div>
-              <img src="./images/tick.png" alt=""  />
-              <span
-                >Set up and operate your own digital clinics <br> to become
-                personal/family doctors to  <br> thousands of clients in your city.
               </span>
             </div>
             <div>
               <img src="./images/tick.png" alt="" />
               <span
-                >Become a member of our global community <br>  of health innovators
-                who transform the health <br> system
+                >Set up and operate your own digital clinics <br />
+                to become personal/family doctors to <br />
+                thousands of clients in your city.
+              </span>
+            </div>
+            <div>
+              <img src="./images/tick.png" alt="" />
+              <span
+                >Become a member of our global community <br />
+                of health innovators who transform the health <br />
+                system
               </span>
             </div>
           </div>
 
           <div class="s-btn">
-            <button>Join Waitlist</button>
+            
+              <button>
+                
+                <a href="./join.html">
+                  Join Waitlist
+                </a>
+               </button>
+        
+          
           </div>
         </div>
         <div class="c-image">
@@ -202,7 +251,15 @@
           </div>
 
           <div class="s-btn">
-            <button>Join Waitlist</button>
+           
+              <button>
+                <a href="./join.html">
+                  Join Waitlist
+                </a>
+               </button>
+            
+       
+           
           </div>
         </div>
       </div>
@@ -250,16 +307,28 @@
     </div>
     <!-- map -->
     <div class="map-container">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.3034511510996!2d-0.18458738585215567!3d5.669190734078464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9cf481e3f205%3A0x3d04b02874464992!2sNorth%20Legon%20Hospital!5e0!3m2!1sen!2sgh!4v1665746001164!5m2!1sen!2sgh" width="100%" height="260" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.3034511510996!2d-0.18458738585215567!3d5.669190734078464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9cf481e3f205%3A0x3d04b02874464992!2sNorth%20Legon%20Hospital!5e0!3m2!1sen!2sgh!4v1665746001164!5m2!1sen!2sgh"
+        width="100%"
+        height="260"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
     </div>
     <!-- footer -->
     <footer>
       <div class="footer-col">
         <div class="footer-img">
-          <img src="./images/logo.png" alt="">
+          <img src="./images/logo.png" alt="" />
         </div>
-      
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente fugiat <br> harum rem officia maiores, ipsa quibusdam amet nobis quo eveniet.</p>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+          fugiat <br />
+          harum rem officia maiores, ipsa quibusdam amet nobis quo eveniet.
+        </p>
       </div>
       <div class="footer-col">
         <h3>Company</h3>
@@ -280,6 +349,16 @@
         </ul>
       </div>
     </footer>
-
+    
+    <script>
+      $(window).on("scroll", function () {
+        if ($(window).scrollTop() > 50) {
+          $(".nav-bar").addClass("top-nav");
+        } else {
+          $(".nav-bar").removeClass("top-nav");
+        }
+      });
+    </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script> 
   </body>
 </html>
