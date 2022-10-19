@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Nunito:wght@300;400&family=Poppins:wght@300;400;500;600;700&family=Square+Peg&family=Trirong:wght@300&display=swap"
       rel="stylesheet"
     />
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style.css" />
     <title>Clinicals</title>
 </head>
@@ -24,8 +25,8 @@
                 <li><img src="./images/twitter.png" alt="" /></li>
               </ul>
             </div>
-            <div class="join-btn">
-              <button>Join Waitlist</button>
+            <div  class="join-btn">
+              <button >Join Waitlist</button>
             </div>
           </div>
           <!-- nav-bar -->
@@ -62,7 +63,10 @@
                     and patient health.
                   </p>
                   <div class="j-btn-m">
-                    <button class="j-btn">Join Waitlist</button>
+                    <a href="./join.html">
+                      <button class="j-btn">Join Waitlist</button>
+                    </a>
+                  
                   </div>
                 </div>
                 
@@ -99,7 +103,11 @@
                 </div>
       
                 <div class="s-btn">
-                  <button>Join Waitlist</button>
+                  <button>
+                    <a href="./join.html">
+                      Join Waitlist
+                    </a>
+                   </button>
                 </div>
               </div>
               <div class="c-image">
@@ -135,5 +143,16 @@
           </ul>
         </div>
       </footer>
+      <script>
+        $(window).on('scroll', function(){
+          if($(window).scrollTop() > 50){
+            $('.nav-bar').addClass('top-nav')
+          }
+          else{
+            $('.nav-bar').removeClass('top-nav')
+          }
+        }
+        )
+        </script>
 </body>
 </html>
