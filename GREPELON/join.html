@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join Waitlist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Nunito:wght@300;400&family=Poppins:wght@300;400;500;600;700&family=Square+Peg&family=Trirong:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/0afd687fc7.js" crossorigin="anonymous"></script>>
+    <link rel="stylesheet" href="./join.css" />
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <section>
+      <form onsubmit="whenClicked()">
+        <div class="row">
+          <div class="col-1">
+            <label for="first name">First Name</label>
+            <input type="text" />
+          </div>
+
+          <div class="col-1">
+            <label for="last name">Last Name</label>
+            <input type="text" />
+          </div>
+        </div>
+        <div class="col">
+          <label for="phone number">Phone Number</label>
+          <input type="tel" />
+        </div>
+        <div class="col-2">
+          <span>Mail Address</span>
+          <div>
+            <input type="text" />
+            <p>Street Address</p>
+          </div>
+          <div class="address">
+            <div>
+              <input type="text" required  />
+              <p>City</p>
+            </div>
+            <div>
+              <input type="text" />
+              <p>State/province</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <label for="email">Email Address</label>
+          <input type="email"  required/>
+        </div>
+        <div class="col-4">
+          <label for="birth">Date of Birth</label>
+          <input type="date" />
+        </div>
+
+        <div>
+          <input
+            type="submit"
+            value="Submit"
+           
+            class="btn"
+          />
+        </div>
+      </form>
+    </section>
+
+    <div class="popup" id="popup">
+      <div class="popup-content">
+        <div class="tick-container">
+            <i class="fa-sharp fa-solid fa-check"></i>
+        </div>
+        <h2>Thank You!</h2>
+     <span>Your details has been successfully submitted.</span>
+     <button onclick="Close()" type='button' id="popup">OK</button>
+      </div>
+    </div>
+
+    <script src="./join.js">
+         
+    </script>
+  </body>
+</html>
