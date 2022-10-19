@@ -10,6 +10,11 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Nunito:wght@300;400&family=Poppins:wght@300;400;500;600;700&family=Square+Peg&family=Trirong:wght@300&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./style.css" />
     <title>Health facilities</title>
   </head>
@@ -25,7 +30,7 @@
         </ul>
       </div>
       <div class="join-btn">
-        <button>Join Waitlist</button>
+        <button  >Join Waitlist</button>
       </div>
     </div>
     <!-- nav-bar -->
@@ -63,7 +68,14 @@
               and patient health.
             </p>
             <div class="j-btn-m">
-              <button class="j-btn">Join Waitlist</button>
+              <a href="./join.html">
+                <button class="j-btn">
+               
+                  Join Waitlist
+                
+               </button>
+              </a>
+              
             </div>
           </div>
         </div>
@@ -107,7 +119,12 @@
           </div>
 
           <div class="s-btn">
-            <button>Join Waitlist</button>
+       
+            <button>
+            <a href="./join.html">
+              Join Waitlist
+            </a>
+             </button>
           </div>
         </div>
       </div>
@@ -119,81 +136,88 @@
           <form action="" class="c-form">
             <span>Send Us a Message</span>
             <div class="row">
-                <div class="col"> 
-                     <label for="name">Name</label>
-                    <input type="text" />
-                </div>
-              
-                <div class="col"> 
-                     <label for="phone number">Phone Number</label>
-                    <input type="tel" />
-                </div>
-              
-            
+              <div class="col">
+                <label for="name">Name</label>
+                <input type="text" />
+              </div>
+
+              <div class="col">
+                <label for="phone number">Phone Number</label>
+                <input type="tel" />
+              </div>
             </div>
             <div class="row">
-                <div class="col"> 
-                     <label for="email">Email Address</label>
-                    <input type="email" />
-                </div>
-              
-                <div class="col"> 
-                     <label for="message">Message</label>
-                    <input type="text" />
-                </div>
-              
-            
+              <div class="col">
+                <label for="email">Email Address</label>
+                <input type="email" />
+              </div>
+             
+
+              <div class="col">
+                <label for="message">Message</label>
+                <input type="text" />
+              </div>
             </div>
-        
-     
-          
+
             <button>Send</button>
           </form>
 
           <div class="contact-items">
             <div class="sub-c-items">
-                <div class="items">
-                    <img src="./images/tel.png" alt=""  id="c-tel"/>
-                    <span id="tel-text">+233 209 224 7848</span>
-                  </div>
-                  <div class="items">
-                    <img src="./images/email2.png" alt="" />
-                    <span id="tel-text">+233 209 224 7848</span>
-                  </div>
-
+              <div class="items">
+                <img src="./images/tel.png" alt="" id="c-tel" />
+                <span id="tel-text">+233 209 224 7848</span>
+              </div>
+              <hr>
+              <div class="items">
+                <img src="./images/email2.png" alt="" />
+                <span id="tel-text">+233 209 224 7848</span>
+              </div>
             </div>
-           
           </div>
         </div>
       </div>
     </div>
     <!-- footer -->
     <footer>
-        <div class="footer-col">
-          <div class="footer-img">
-            <img src="./images/logo.png" alt="">
-          </div>
-        
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente fugiat <br> harum rem officia maiores, ipsa quibusdam amet nobis quo eveniet.</p>
+      <div class="footer-col">
+        <div class="footer-img">
+          <img src="./images/logo.png" alt="" />
         </div>
-        <div class="footer-col">
-          <h3>Company</h3>
-          <ul>
-            <li>About Us</li>
-            <li>Services</li>
-            <li>Partners</li>
-            <li>Mission & Vision</li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h3>Support</h3>
-          <ul>
-            <li>Help Center</li>
-            <li>FAQ</li>
-            <li>Forum</li>
-            <li>Contact</li>
-          </ul>
-        </div>
-      </footer>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+          fugiat <br />
+          harum rem officia maiores, ipsa quibusdam amet nobis quo eveniet.
+        </p>
+      </div>
+      <div class="footer-col">
+        <h3>Company</h3>
+        <ul>
+          <li>About Us</li>
+          <li>Services</li>
+          <li>Partners</li>
+          <li>Mission & Vision</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Support</h3>
+        <ul>
+          <li>Help Center</li>
+          <li>FAQ</li>
+          <li>Forum</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+    </footer>
+    <script>
+      $(window).on("scroll", function () {
+        if ($(window).scrollTop() > 50) {
+          $(".nav-bar").addClass("top-nav");
+        } else {
+          $(".nav-bar").removeClass("top-nav");
+        }
+      });
+    </script>
   </body>
 </html>
