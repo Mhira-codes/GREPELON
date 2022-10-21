@@ -17,55 +17,58 @@
   <body>
     <div class="overlay"></div>
     <section>
-      <form onsubmit="whenClicked()">
+      <form  onsubmit="whenClicked(event)" >
         <div class="row">
           <div class="col-1">
             <label for="first name">First Name</label>
-            <input type="text" />
+            <input type="text"  id="fname"/>
+            <div class="error"></div>
           </div>
 
           <div class="col-1">
             <label for="last name">Last Name</label>
-            <input type="text" />
+            <input type="text" id="lname" />
+            <div class="error"></div>
           </div>
         </div>
         <div class="col">
           <label for="phone number">Phone Number</label>
-          <input type="tel" />
+          <input type="tel"  id="tel-number"/>
+          <div class="error"></div>
         </div>
         <div class="col-2">
           <span>Mail Address</span>
           <div>
-            <input type="text" />
+            <input type="text"   id="address" />
             <p>Street Address</p>
+            <div class="error"></div>
           </div>
           <div class="address">
             <div>
-              <input type="text" required  />
+              <input type="text" id="city" />
               <p>City</p>
             </div>
             <div>
-              <input type="text" />
+              <input type="text" id="state" />
               <p>State/province</p>
+              <div class="error"></div>
             </div>
           </div>
         </div>
         <div class="col-3">
           <label for="email">Email Address</label>
-          <input type="email"  required/>
+          <input type="email"   id="email"/>
+          <div class="error"></div>
         </div>
         <div class="col-4">
           <label for="birth">Date of Birth</label>
-          <input type="date" />
+          <input type="date" id="date" />
+          <div class="error"></div>
         </div>
 
         <div>
-          <input
-            type="submit"
-            value="Submit"
-           
-            class="btn"
-          />
+          <button      type="submit"   class="btn"  >SUBMIT</button>
+       
         </div>
       </form>
     </section>
