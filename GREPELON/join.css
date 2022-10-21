@@ -156,7 +156,7 @@ label,span{
     color: black;
 }
 .tick-container{
-    background-color: rgb(23, 243, 23) ;
+    background-color: rgb(132, 240, 132) ;
     border-radius: 100%;
     width: 100px;
     height: 100px;
@@ -175,7 +175,7 @@ color: white;
     width: 100%;
     height: 3rem;
     margin-top: 1rem;
-    background-color: rgb(23, 243, 23) ;
+    background-color: rgb(134, 238, 134) ;
     border: none;
     outline: none;
     font-size: 1.3rem;
