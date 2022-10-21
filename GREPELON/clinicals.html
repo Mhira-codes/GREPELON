@@ -12,6 +12,7 @@
     />
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Clinicals</title>
 </head>
 <body>
@@ -47,7 +48,10 @@
           <div class="container">
             <div class="main-header-container">
               <div class="overlay"></div>
-              <div class="sub-container">
+              <div 
+              data-aos="zoom-in"
+              data-aos-duration="3000"
+              class="sub-container">
                 
                 <div class="header-text">
                   <div>
@@ -74,7 +78,12 @@
             </div>
           </div>
           <div>
-            <div class="c-sub-container">
+            <div 
+            data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500"
+  
+            class="c-sub-container">
               <div class="s-message" id="c-message">
                 <h4>for clinicals</h4>
       
@@ -153,6 +162,10 @@
           }
         }
         )
+        </script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
         </script>
 </body>
 </html>
