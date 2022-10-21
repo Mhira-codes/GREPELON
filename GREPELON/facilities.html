@@ -15,6 +15,7 @@
       integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./style.css" />
     <title>Health facilities</title>
   </head>
@@ -53,7 +54,11 @@
     <div class="container">
       <div class="main-header-container" id="facility-bg">
         <div class="overlay"></div>
-        <div class="sub-container">
+        <div
+        data-aos="zoom-out-right"
+     
+        data-aos-duration="3000"
+         class="sub-container">
           <div class="header-text">
             <div>
               <span>welcome to</span>
@@ -82,7 +87,10 @@
       </div>
     </div>
     <div class="f-container">
-      <div class="sub-s-container">
+      <div 
+      data-aos="fade-right"
+      data-aos-duration="3000"
+      class="sub-s-container">
         <div class="s-image-container">
           <img src="./images/health facilty.png" alt="" id="health-f" />
         </div>
@@ -218,6 +226,10 @@
           $(".nav-bar").removeClass("top-nav");
         }
       });
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>
