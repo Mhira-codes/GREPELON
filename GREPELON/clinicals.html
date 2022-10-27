@@ -10,44 +10,97 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Nunito:wght@300;400&family=Poppins:wght@300;400;500;600;700&family=Square+Peg&family=Trirong:wght@300&display=swap"
       rel="stylesheet"
     />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Clinicals</title>
 </head>
 <body>
-        <!-- header -->
-        <div class="header-container">
-            <div class="social-images">
-              <ul>
-                <li><img src="./images/facebook.png" alt="" /></li>
-                <li><img src="./images/instagram.png" alt="" /></li>
-                <li><img src="./images/youtube.png" alt="" /></li>
-                <li><img src="./images/twitter.png" alt="" /></li>
-              </ul>
-            </div>
-            <div  class="join-btn">
-              <button >Join Waitlist</button>
-            </div>
-          </div>
-          <!-- nav-bar -->
-          <nav class="nav-bar">
-            <div><a href="index.html">
-              <img src="./images/logo.png" alt="" />
-            </a></div>
-            <div>
-              <ul>
-                <li><a href="index.html" id="home">Home</a></li>
-                <li><a href="./clinicals.html">For Clinicians</a></li>
-                <li><a href="./patient.html">For Patients</a></li>
-                <li><a href="./facilities.html">For Health Facilities</a></li>
-              </ul>
-            </div>
-          </nav>
+          <!-- header -->
+    <div
+    class="header-container d-flex flex-row justify-content-between align-items-center flex-wrap"
+  >
+    <div class="social-images">
+      <ul
+        class="d-flex justify-content-between align-items-center list-unstyled"
+      >
+        <li class="d-flex align-items-center flex-column">
+          <img src="./images/facebook.png" alt="" />
+          <!-- <p>facebook</p> -->
+        </li>
+        <li class="d-flex align-items-center flex-column">
+          <img src="./images/instagram.png" alt="" />
+          <!-- <p>instagram</p> -->
+        </li>
+        <li class="d-flex align-items-center flex-column">
+          <img src="./images/youtube.png" alt="" />
+          <!-- <p>youtube</p> -->
+        </li>
+
+        <li class="d-flex align-items-center flex-column">
+          <img src="./images/twitter.png" alt="" />
+          <!-- <p>twitter</p> -->
+        </li>
+      </ul>
+    </div>
+    <div class="join-btn">
+      <button>
+        <a href="./join.html"> Join Waitlist </a>
+      </button>
+    </div>
+  </div>
+  <!-- nav-bar -->
+  <nav class="nav-bar navbar navbar-expand-lg" id="nav">
+    <div class="container-fluid">
+      <div class="ml-3">
+        <a href="index.html" class="navbar-brand">
+          <img src="./images/logo.png" alt="" />
+        </a>
+      </div>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse links" id="navbarNavAltMarkup">
+        <ul class="sm-fs-4 navbar-nav ms-auto me-md-3">
+          <li class="sm-fs-4 nav-item">
+            <a
+              href="index.html"
+              class="nav-link active"
+              aria-current="page"
+              id="home"
+              >Home</a
+            >
+          </li>
+          <li class="sm-fs-4 nav-item">
+            <a href="./clinicals.html" class="nav-link fw-bolder"
+              >For Clinicians</a
+            >
+          </li>
+          <li class="sm-fs-4 nav-item">
+            <a href="./patient.html" class="nav-link fw-bold">For Patients</a>
+          </li>
+          <li class="sm-fs-4 nav-item">
+            <a href="./facilities.html" class="nav-link fw-bold"
+              >For Health Facilities</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
           <!-- main -->
-          <div class="container">
-            <div class="main-header-container">
-              <div class="overlay"></div>
+          <div class="main-container">
+            <div class="main-header-container container-fluid ">
+              <!-- <div class="overlay"></div> -->
               <div 
               data-aos="zoom-in"
               data-aos-duration="3000"
@@ -77,51 +130,60 @@
               </div>
             </div>
           </div>
-          <div>
-            <div 
-            data-aos="fade-down"
-     data-aos-easing="linear"
-     data-aos-duration="1500"
-  
-            class="c-sub-container">
-              <div class="s-message" id="c-message">
-                <h4>for clinicals</h4>
-      
-                <div class="list" id="c-lists">
-                  <div>
-                    <img src="./images/tick.png" alt="" />
-                    <span
-                      >Own the clinic, the client and the revenue, <br>
-                      up to $5,000/month
-                    </span>
+          <div class="container">
+            <div
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-duration="3000"
+              class="c-sub-container"
+            >
+            <div class="container">
+              <div class="row">
+               <div class="col-md-7  col-sm-12 mx-4">
+                <div class="s-message" id="c-message">
+                  <h4 class="fw-bolder">for clinicals</h4>
+        
+                  <div class="list" id="c-lists">
+                    <div class="">
+                      <img src="./images/tick.png" alt="" />
+                      <span
+                        >Own the clinic, the client and the revenue,
+                        up to $5,000/month
+                      </span>
+                    </div>
+                    <div>
+                      <img src="./images/tick.png" alt="" />
+                      <span
+                        >Set up and operate your own digital clinics 
+                        to become personal/family doctors to 
+                        thousands of clients in your city.
+                      </span>
+                    </div>
+                    <div>
+                      <img src="./images/tick.png" alt="" />
+                      <span
+                        >Become a member of our global community 
+                        of health innovators who transform the health
+                        system
+                      </span>
+                    </div>
                   </div>
-                  <div>
-                    <img src="./images/tick.png" alt=""  />
-                    <span
-                      >Set up and operate your own digital clinics <br> to become
-                      personal/family doctors to  <br> thousands of clients in your city.
-                    </span>
-                  </div>
-                  <div>
-                    <img src="./images/tick.png" alt="" />
-                    <span
-                      >Become a member of our global community <br>  of health innovators
-                      who transform the health <br> system
-                    </span>
+        
+                  <div class="s-btn">
+                    <button>
+                      <a href="./join.html"> Join Waitlist </a>
+                    </button>
                   </div>
                 </div>
-      
-                <div class="s-btn">
-                  <button>
-                    <a href="./join.html">
-                      Join Waitlist
-                    </a>
-                   </button>
+               </div>
+               <div class="col-md-4  col-sm-12 mx-2">
+                <div class="c-image">
+                  <img src="./images/clinical bg.png" alt="" />
                 </div>
+               </div>
               </div>
-              <div class="c-image">
-                <img src="./images/clinical bg.png" alt="" />
-              </div>
+            </div>
+            
             </div>
           </div>
                     <!-- footer -->
@@ -163,6 +225,7 @@
         }
         )
         </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
           AOS.init();
