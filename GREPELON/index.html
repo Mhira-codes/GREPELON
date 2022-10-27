@@ -10,314 +10,544 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Nunito:wght@300;400&family=Poppins:wght@300;400;500;600;700&family=Square+Peg&family=Trirong:wght@300&display=swap"
       rel="stylesheet"
-    /> 
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./style.css" />
-  
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!-- header -->
-    <div class="header-container">
+    <div
+      class="header-container d-flex flex-row justify-content-between align-items-center flex-wrap"
+    >
       <div class="social-images">
-        <ul>
-          <li>
+        <ul
+          class="d-flex justify-content-between align-items-center list-unstyled"
+        >
+          <li class="d-flex align-items-center flex-column">
             <img src="./images/facebook.png" alt="" />
             <!-- <p>facebook</p> -->
           </li>
-          <li>
+          <li class="d-flex align-items-center flex-column">
             <img src="./images/instagram.png" alt="" />
             <!-- <p>instagram</p> -->
           </li>
-          <li>
+          <li class="d-flex align-items-center flex-column">
             <img src="./images/youtube.png" alt="" />
             <!-- <p>youtube</p> -->
           </li>
 
-          <li>
+          <li class="d-flex align-items-center flex-column">
             <img src="./images/twitter.png" alt="" />
             <!-- <p>twitter</p> -->
           </li>
         </ul>
       </div>
       <div class="join-btn">
-        
-          <button >
-            <a href="./join.html">
-              Join Waitlist
-            </a>
-            </button>
-       
+        <button>
+          <a href="./join.html"> Join Waitlist </a>
+        </button>
       </div>
     </div>
     <!-- nav-bar -->
-    <nav class="nav-bar" id="nav">
-      <div>
-        <a href="index.html">
-          <img src="./images/logo.png" alt="" />
-        </a>
-      </div>
-      <div>
-        <ul>
-          <li><a href="index.html" id="home">Home</a></li>
-          <li><a href="./clinicals.html">For Clinicians</a></li>
-          <li><a href="./patient.html">For Patients</a></li>
-          <li><a href="./facilities.html">For Health Facilities</a></li>
-        </ul>
+    <nav class="nav-bar navbar navbar-expand-lg" id="nav">
+      <div class="container-fluid">
+        <div class="ml-3">
+          <a href="index.html" class="navbar-brand">
+            <img src="./images/logo.png" alt="" />
+          </a>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse links" id="navbarNavAltMarkup">
+          <ul class="sm-fs-4 navbar-nav ms-auto me-md-3">
+            <li class="sm-fs-4 nav-item">
+              <a
+                href="index.html"
+                class="nav-link active"
+                aria-current="page"
+                id="home"
+                >Home</a
+              >
+            </li>
+            <li class="sm-fs-4 nav-item">
+              <a href="./clinicals.html" class="nav-link fw-bolder"
+                >For Clinicians</a
+              >
+            </li>
+            <li class="sm-fs-4 nav-item">
+              <a href="./patient.html" class="nav-link fw-bold">For Patients</a>
+            </li>
+            <li class="sm-fs-4 nav-item">
+              <a href="./facilities.html" class="nav-link fw-bold"
+                >For Health Facilities</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
     <!-- main -->
-    <div class="container" >
-      <div class="main-header-container">
-        <div class="overlay"></div>
-        <div class="sub-container">
-          <div class="arrow">
-            <img src="./images/left arrow.png" alt="" />
-          </div>
-          <div 
-          data-aos="fade-right"
-   
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-sine"
-           class="header-text">
-            <div>
-              <span>welcome to</span>
-              <span>GPREPELON</span>
-            </div>
+    <div
+      class="main-container carousel slide"
+      data-bs-ride="carousel"
+      id="carouselExampleControls"
+    >
+      <div class="carousel-inner">
+        <div class="main-header-container container-fluid carousel-item active">
+          <!-- <div class="overlay"></div> -->
+          <div class="sub-container">
+            <!-- <div class="arrow">
+              <img src="./images/left arrow.png" alt="" />
+            </div> -->
+            <div
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-sine"
+              class="header-text"
+            >
+              <div>
+                <span>welcome to</span>
+                <span>GPREPELON</span>
+              </div>
 
-            <p>
-              We’re a health technology startupon a mission to redesign,<br />
-              innovate and optimize health care systems. We develop <br />
-              technology for health facilities, clinicians & clinical practice,
-              <br />
-              and patient health.
-            </p>
-            <div class="j-btn-m">
-              <a href="./join.html">
-                <button class="j-btn">Join Waitlist</button>
-              </a>
-            
-             
+              <p>
+                We’re a health technology startupon a mission to redesign,<br />
+                innovate and optimize health care systems. We develop <br />
+                technology for health facilities, clinicians & clinical
+                practice,
+                <br />
+                and patient health.
+              </p>
+              <div class="j-btn-m">
+                <a href="./join.html">
+                  <button class="j-btn">Join Waitlist</button>
+                </a>
+              </div>
             </div>
+            <!-- <div class="arrow">
+              <img src="./images/right arrow.png" alt="" />
+            </div> -->
           </div>
-          <div class="arrow">
-            <img src="./images/right arrow.png" alt="" />
+        </div>
+        <div class="header-container-1 container-fluid carousel-item">
+          <!-- <div class="overlay"></div> -->
+          <div class="sub-container">
+            <!-- <div class="arrow">
+              <img src="./images/left arrow.png" alt="" />
+            </div> -->
+            <div
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-sine"
+              class="header-text"
+            >
+              <div>
+                <span>welcome to</span>
+                <span>GPREPELON</span>
+              </div>
+
+              <p>
+                We’re a health technology startupon a mission to redesign,<br />
+                innovate and optimize health care systems. We develop <br />
+                technology for health facilities, clinicians & clinical
+                practice,
+                <br />
+                and patient health.
+              </p>
+              <div class="j-btn-m">
+                <a href="./join.html">
+                  <button class="j-btn">Join Waitlist</button>
+                </a>
+              </div>
+            </div>
+            <!-- <div class="arrow">
+              <img src="./images/right arrow.png" alt="" />
+            </div> -->
+          </div>
+        </div>
+        <div class="header-container-2 container-fluid carousel-item">
+          <!-- <div class="overlay"></div> -->
+          <div class="sub-container">
+            <!-- <div class="arrow">
+              <img src="./images/left arrow.png" alt="" />
+            </div> -->
+            <div
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-sine"
+              class="header-text"
+            >
+              <div>
+                <span>welcome to</span>
+                <span>GPREPELON</span>
+              </div>
+
+              <p>
+                We’re a health technology startupon a mission to redesign,<br />
+                innovate and optimize health care systems. We develop <br />
+                technology for health facilities, clinicians & clinical
+                practice,
+                <br />
+                and patient health.
+              </p>
+              <div class="j-btn-m">
+                <a href="./join.html">
+                  <button class="j-btn">Join Waitlist</button>
+                </a>
+              </div>
+            </div>
+            <!-- <div class="arrow">
+              <img src="./images/right arrow.png" alt="" />
+            </div> -->
+          </div>
+        </div>
+        <div class="header-container-3 container-fluid carousel-item">
+          <!-- <div class="overlay"></div> -->
+          <div class="sub-container">
+            <!-- <div class="arrow">
+              <img src="./images/left arrow.png" alt="" />
+            </div> -->
+            <div
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-sine"
+              class="header-text"
+            >
+              <div>
+                <span>welcome to</span>
+                <span>GPREPELON</span>
+              </div>
+
+              <p>
+                We’re a health technology startupon a mission to redesign,<br />
+                innovate and optimize health care systems. We develop <br />
+                technology for health facilities, clinicians & clinical
+                practice,
+                <br />
+                and patient health.
+              </p>
+              <div class="j-btn-m">
+                <a href="./join.html">
+                  <button class="j-btn">Join Waitlist</button>
+                </a>
+              </div>
+            </div>
+            <!-- <div class="arrow">
+              <img src="./images/right arrow.png" alt="" />
+            </div> -->
+          </div>
+        </div>
+        <div class="header-container-4 container-fluid carousel-item">
+          <!-- <div class="overlay"></div> -->
+          <div class="sub-container">
+            <!-- <div class="arrow">
+              <img src="./images/left arrow.png" alt="" />
+            </div> -->
+            <div
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-sine"
+              class="header-text"
+            >
+              <div>
+                <span>welcome to</span>
+                <span>GPREPELON</span>
+              </div>
+
+              <p>
+                We’re a health technology startupon a mission to redesign,<br />
+                innovate and optimize health care systems. We develop <br />
+                technology for health facilities, clinicians & clinical
+                practice,
+                <br />
+                and patient health.
+              </p>
+              <div class="j-btn-m">
+                <a href="./join.html">
+                  <button class="j-btn">Join Waitlist</button>
+                </a>
+              </div>
+            </div>
+            <!-- <div class="arrow">
+              <img src="./images/right arrow.png" alt="" />
+            </div> -->
           </div>
         </div>
       </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
     <!-- our solution -->
-    <div class="solution-container">
+    <div class="solution-container container">
       <div class="s-heading">
         <span>Our</span>
         <span id="s-text">Solutions</span>
       </div>
 
       <div
-      data-aos="fade-up"
-     data-aos-anchor-placement="top-bottom"
-     data-aos-duration="3000"
-       class="sub-s-container">
-        <div class="s-image-container">
-          <img src="./images/family.png" alt="" />
-        </div>
-        <div class="s-message">
-          <h4>for patients</h4>
-
-          <div class="list">
-            <div>
-              <img src="./images/tick.png" alt="" />
-              <span>A platform to find a personal or family doctor </span>
-            </div>
-            <div>
-              <img src="./images/tick.png" alt="" class="img" />
-              <span
-                >Have your Medical services at your home through the grepelon
-                clinic app
-              </span>
-            </div>
-            <div>
-              <img src="./images/tick.png" alt="" class="img" />
-              <span
-                >Access your personal health records on the grepelon App in all
-                hospitals
-              </span>
-            </div>
-
-            <div>
-              <img src="./images/tick.png" alt="" id="img" />
-              <span
-                >The Grepelon App enables you to manage and track your health
-                remotely with your doctor’s supervision.
-              </span>
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="3000"
+        class="sub-s-container  "
+      >
+      <div class="container ">
+        <div class="row  ">
+          <div class="col-md-4 mx-2">
+            <div class="s-image-container  ">
+              <img src="./images/family.png" alt="" />
             </div>
           </div>
-
-          <div class="s-btn">
-           
-         
-
-              <button>
-                <a href="./join.html">
-                  Join Waitlist
-                </a>
-               </button>
-           
-            
-            
+          <div class="col-md-7 mx-4 ">
+            <div class="s-message  ">
+              <h4 class="fw-bolder">for patients</h4>
+    
+              <div class="list">
+                <div>
+                  <img src="./images/tick.png" alt="" />
+                  <span>A platform to find a personal or family doctor </span>
+                </div>
+                <div>
+                  <img src="./images/tick.png" alt=""  />
+                  <span
+                    >Have your Medical services at your home through the grepelon
+                    clinic app
+                  </span>
+                </div>
+                <div>
+                  <img src="./images/tick.png" alt=""  />
+                  <span
+                    >Access your personal health records on the grepelon App in all
+                    hospitals
+                  </span>
+                </div>
+    
+                <div>
+                  <img src="./images/tick.png" alt=""  />
+                  <span
+                    >The Grepelon App enables you to manage and track your health
+                    remotely with your doctor’s supervision.
+                  </span>
+                </div>
+              </div>
+    
+              <div class="s-btn">
+                <button>
+                  <a href="./join.html"> Join Waitlist </a>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+       
+       
+      </div>
     </div>
     <!-- clinical -->
-    <div>
+    <div class="container">
       <div
-      data-aos="fade-up"
-      data-aos-anchor-placement="top-bottom"
-      data-aos-duration="3000"
-       class="c-sub-container">
-        <div
-       
-         class="s-message" id="c-message">
-          <h4>for clinicals</h4>
-
-          <div class="list" id="c-lists">
-            <div>
-              <img src="./images/tick.png" alt="" />
-              <span
-                >Own the clinic, the client and the revenue, <br />
-                up to $5,000/month
-              </span>
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="3000"
+        class="c-sub-container"
+      >
+      <div class="container">
+        <div class="row">
+         <div class="col-md-7  col-sm-12 mx-4">
+          <div class="s-message" id="c-message">
+            <h4 class="fw-bolder">for clinicals</h4>
+  
+            <div class="list" id="c-lists">
+              <div class="">
+                <img src="./images/tick.png" alt="" />
+                <span
+                  >Own the clinic, the client and the revenue,
+                  up to $5,000/month
+                </span>
+              </div>
+              <div>
+                <img src="./images/tick.png" alt="" />
+                <span
+                  >Set up and operate your own digital clinics 
+                  to become personal/family doctors to 
+                  thousands of clients in your city.
+                </span>
+              </div>
+              <div>
+                <img src="./images/tick.png" alt="" />
+                <span
+                  >Become a member of our global community 
+                  of health innovators who transform the health
+                  system
+                </span>
+              </div>
             </div>
-            <div>
-              <img src="./images/tick.png" alt="" />
-              <span
-                >Set up and operate your own digital clinics <br />
-                to become personal/family doctors to <br />
-                thousands of clients in your city.
-              </span>
-            </div>
-            <div>
-              <img src="./images/tick.png" alt="" />
-              <span
-                >Become a member of our global community <br />
-                of health innovators who transform the health <br />
-                system
-              </span>
-            </div>
-          </div>
-
-          <div class="s-btn">
-            
+  
+            <div class="s-btn">
               <button>
-                
-                <a href="./join.html">
-                  Join Waitlist
-                </a>
-               </button>
-        
-          
+                <a href="./join.html"> Join Waitlist </a>
+              </button>
+            </div>
           </div>
+         </div>
+         <div class="col-md-4  col-sm-12 mx-2">
+          <div class="c-image">
+            <img src="./images/clinical bg.png" alt="" />
+          </div>
+         </div>
         </div>
-        <div class="c-image">
-          <img src="./images/clinical bg.png" alt="" />
-        </div>
+      </div>
+      
       </div>
     </div>
     <!-- facilities -->
     <div class="f-container">
       <div
-      data-aos="fade-up"
-      data-aos-anchor-placement="top-bottom"
-      data-aos-duration="3000"
-       class="sub-s-container">
-        <div class="s-image-container">
-          <img src="./images/health facilty.png" alt="" id="health-f" />
-        </div>
-        <div class="s-message">
-          <h4>
-            for health facilities: hospitals,<br />
-            pharma and lab
-          </h4>
 
-          <div class="list">
-            <div>
-              <img src="./images/tick.png" alt="" />
-              <span
-                >Transition your facility unto our health data technology and
-                electronic health records interoperability system.
-              </span>
-            </div>
-            <div>
-              <img src="./images/tick.png" alt="" class="img" />
-              <span
-                >clinicals software connects hospitals, pharmacies, Laboratories
-                and blood banks on one platform to enable seamless clinical
-                workflow.
-              </span>
-            </div>
-            <div>
-              <img src="./images/tick.png" alt="" class="img" />
-              <span
-                >Endorphyne app is a hospital and clinical teams workspace for
-                duty scheduling, chat platform, clinical forms, sheets, memos,
-                letterheads, staff appraisals etc
-              </span>
-            </div>
-          </div>
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="3000"
+        class="sub-s-container"
+      > 
+      <div class="container">
+<div class="row">
+  <div class="col-md-4  col-sm-12 mx-2 ">
+    <div class="s-image-container">
+      <img src="./images/health facilty.png" alt="" id="health-f" />
+    </div>
+  </div>
+  <div class="col-md-7 col-sm-12 mx-4">
+    <div class="s-message">
+      <h4 class="fw-bolder">
+        for health facilities: hospitals,<br />
+        pharma and lab
+      </h4>
 
-          <div class="s-btn">
-           
-              <button>
-                <a href="./join.html">
-                  Join Waitlist
-                </a>
-               </button>
-            
-       
-           
-          </div>
+      <div class="list">
+        <div>
+          <img src="./images/tick.png" alt="" />
+          <span
+            >Transition your facility unto our health data technology and
+            electronic health records interoperability system.
+          </span>
         </div>
+        <div>
+          <img src="./images/tick.png" alt="" class="img " />
+          <span
+            >clinicals software connects hospitals, pharmacies, Laboratories
+            and blood banks on one platform to enable seamless clinical
+            workflow.
+          </span>
+        </div>
+        <div>
+          <img src="./images/tick.png" alt="" class="img" />
+          <span
+            >Endorphyne app is a hospital and clinical teams workspace for
+            duty scheduling, chat platform, clinical forms, sheets, memos,
+            letterheads, staff appraisals etc
+          </span>
+        </div>
+      </div>
+
+      <div class="s-btn">
+        <button>
+          <a href="./join.html"> Join Waitlist </a>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+        
+        
       </div>
     </div>
     <!-- contact page -->
     <div class="contact-container">
+      
       <div class="contact-text">
         <span>Contact</span>
         <span id="cont-text">us</span>
       </div>
-      <div class="sub-c-container">
-        <div class="col-1" id="contact-img-1">
-          <div class="col-1-overlay"></div>
-          <form action="">
-            <span>Send Us a Message</span>
-            <input type="text" placeholder="Name" />
-            <input
-              type="tel"
-              name="phone_number"
-              id="number"
-              placeholder="Phone Number"
-            />
-            <input type="email" placeholder="Email Address" />
-            <input type="text" placeholder="Message" id="message-area" />
-            <button>Send</button>
-          </form>
-        </div>
-        <div class="col-1" id="contact-img-2">
-          <div class="data-container">
-            <div class="details">
-              <div class="d-item">
-                <img src="./images/tel.png" alt="" />
-                <span id="tel-text">+233 209 224 7848</span>
+      <div class="sub-c-container container-fluid">
+        <div class="container-fluid">
+          <div class="row  justify-content-center">
+            <div class=" col-md-7 col-sm-12">
+              <div class="col1" id="contact-img-1">
+               
+                <form action="">
+                  <span>Send Us a Message</span>
+                  <input type="text" placeholder="Name" />
+                  <input
+                    type="tel"
+                    name="phone_number"
+                    id="number"
+                    placeholder="Phone Number"
+                  />
+                  <input type="email" placeholder="Email Address" />
+                  <input type="text" placeholder="Message" id="message-area" />
+                  <button>Send</button>
+                </form>
               </div>
             </div>
-            <div class="details" id="email-item">
-              <div class="d-item">
-                <img src="./images/email.png" alt="" />
-                <span id="email-text">+233 209 224 7848</span>
+            <div class=" col-md-4 col-sm-12 -mx-2">
+              <div class="col1" id="contact-img-2">
+                <div class="data-container">
+                  <div class="details">
+                    <div class="d-item">
+                      <img src="./images/tel.png" alt=""/>
+                      <span id="tel-text" class="fs-3">+233 209 224 7848</span>
+                    </div>
+                  </div>
+                  <div class="details" id="email-item">
+                    <div class="d-item">
+                      <img src="./images/email.png" alt="" />
+                      <span id="email-text">+233 209 224 7848</span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
+       
+       
       </div>
     </div>
     <!-- map -->
@@ -364,7 +594,7 @@
         </ul>
       </div>
     </footer>
-    
+
     <script>
       $(window).on("scroll", function () {
         if ($(window).scrollTop() > 50) {
@@ -374,10 +604,29 @@
         }
       });
     </script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script> 
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-          AOS.init();
-        </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+      integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
