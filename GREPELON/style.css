@@ -6,7 +6,7 @@
 
 }
 ::-webkit-scrollbar{
-    display: none;
+ overflow-y: visible;
   }
 
   
@@ -110,7 +110,7 @@ transform: scale(1.2);
     color: white;
 } */
 
-.nav-bar>div>ul{
+.nav-bar>div>ul {
     display: flex;
     gap: 2rem;
     list-style-type: none;
@@ -120,30 +120,30 @@ transform: scale(1.2);
 width: 10rem;
 
 }
-.nav-bar>div>ul>li>a{
+.links>ul>li>a{
     text-decoration: none;
     color: black;
     font-weight: 700;
 }
-.nav-bar>div>ul>::after{
+.links>ul>::after{
     content:" ";
     display:block;
     width: 0%;
     height: 2px;
     background-color: #008000 ;
     transition: 0.5s ease-in-out;
-    margin-top: 0.2rem;
+    margin-top: 0.1rem;
  
 
 }
-.nav-bar>div>ul>:hover::after{
+.links>ul>:hover::after{
     content:" ";
     display:block;
     width: 100%;
     height: 2px;
     background-color: #008000 ;
     border-radius: 1rem;
-    margin-top: 0.2rem;
+    margin-top: 0.1rem;
 
 }
 #home{
@@ -153,21 +153,77 @@ width: 10rem;
 /**main */
 
 .main-header-container{
-    background: url(./images/header=url.png);
+    background:  rgba(12, 134, 12, 0.6);
+    background-image: url(./images/header=url.png);
+  
+   
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-blend-mode: multiply;
     height: 100vh;
 position:relative;
 
 }
-.overlay{
+.header-container-1{
+    background:  rgba(12, 134, 12, 0.6);
+    background-image: url(./images/patient-bg.png);
+  
+   
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    height: 100vh;
+position:relative;
+
+}
+.header-container-2{
+    background:  rgba(12, 134, 12, 0.6);
+    background-image: url(./images/bg.jpg);
+  
+   
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    height: 100vh;
+position:relative;
+
+}
+.header-container-3{
+    background:  rgba(12, 134, 12, 0.6);
+    background-image: url(./images/emergency.png);
+  
+   
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    height: 100vh;
+position:relative;
+
+}
+.header-container-4{
+    background:  rgba(12, 134, 12, 0.6);
+    background-image: url(./images/doc-bg.jpg);
+  
+   
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    height: 100vh;
+position:relative;
+
+}
+/* .overlay{
    background-color:  rgba(12, 134, 12, 0.6);
    width: 100%;
  height: 100vh;
    opacity:2;
 position: absolute;
-}
+} */
 .sub-container{
     position: relative;
     z-index: 20;
@@ -209,18 +265,7 @@ letter-spacing: 1px;
 line-height: 30px;
 font-size: 1.1rem;
 }
-.arrow{
-   margin-top: 7rem;
-    background-color: white;
-width: fit-content;
-padding: 1.2rem;
-display: flex;
-justify-content: center;
-align-items: center;
-border-radius: 100%;
-width: 1rem;
-height: 1rem; 
-}
+
 
 .j-btn-m{
     padding-top: 1rem;
@@ -249,7 +294,8 @@ height: 1rem;
     display: flex;
     gap: 1rem;
     align-items: center;
-    justify-content: center;
+justify-content: center;
+
 
 }
 .s-heading>span{
@@ -261,9 +307,9 @@ height: 1rem;
     color: #008000;
 }
 .sub-s-container{
-    display: flex;
+
   margin-top: 5rem;
-padding: 0 10rem;
+
  
 
 }
@@ -278,9 +324,9 @@ margin-top: 0.2rem;
 
 
 }
-.s-image-container{
-    flex: 1 ;
-}
+/* .s-image-container{
+    flex-basis: 50%;
+} */
 .s-image-container>img{
     width: 20rem;
     border-radius: 10px;
@@ -289,7 +335,7 @@ margin-top: 0.2rem;
     object-fit: cover;
 }
 .s-message{
-    flex: 1 ;
+  flex-basis: 50% ;
 }
 
 .s-message>h4{
@@ -333,10 +379,10 @@ font: bold;
 }
 /* clinical */
 .c-sub-container{
-    display: flex;
+ 
   margin-top: 5rem;
-padding: 0 10rem;
-flex-wrap: wrap;
+
+
 
 
 }
@@ -353,11 +399,11 @@ flex-wrap: wrap;
 }
 #c-message{
    
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
-#c-lists{
+/* #c-lists{
     line-height: 32px;
-}
+} */
 #health-f{
     width: 20rem;
     height: 27rem;
@@ -392,18 +438,17 @@ flex-wrap: wrap;
 }
 /* *contact page */
 .sub-c-container{
-    width: 100%;
     margin-top: 5rem;
     display: flex;
 }
-.col-1{
+.col1{
     
  height: 32rem;
     object-fit: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    flex: 1;
+ 
     position: relative;
 }
 
@@ -418,8 +463,10 @@ flex-wrap: wrap;
 
 #contact-img-1{
     background-image: url(./images/emergency.png);
+    background-repeat: no-repeat;
     position: relative;
-    flex: 1.5;
+    flex: 1;
+   
 
     
 }
@@ -570,20 +617,17 @@ footer{
 
 /** PATIENT PAGE */
 .patient-bg{
-    background: url(./images/patient-bg.png);
+    background: rgba(0, 0, 0, 0.5);
+    background-image: url(./images/patient-bg.png);
+    
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-blend-mode: multiply;
     height: 100vh;
 position:relative;
 }
-.patient-overlay{
-    position: absolute;
-    width: 100%;
-    height: 100vh;
- background: rgba(0, 0, 0, 0.5);
-    ;
-}
+
 .p-text{
     display: flex;
     flex-direction: column;
@@ -655,17 +699,28 @@ transform: scale(1.1);
 }
 /* * FACILIY */
 #facility-bg{
-    background:url(./images/facility-bg.png);
+    background:  rgba(12, 134, 12, 0.6);
+    background-image: url(./images/facility-bg.png);
+  
+   
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    height: 100vh;
+position:relative;
+   
 }
 .contact-bg{
-    background: url(./images/contact\ -bg.png);
+    background:  rgba(12, 134, 12, 0.6);
+    background-image: url(./images/contact\ -bg.png);
     background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-size:cover ;
+    background-blend-mode: multiply;
     height: 100vh;
+position:relative;
+  
 }
 .contact-page{
     margin-top: 4rem;
@@ -674,31 +729,31 @@ transform: scale(1.1);
     position: relative;
     z-index: 20;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     height: 100vh;
     justify-content: center;
     align-items:center;
 }
-.c-content>.c-form{
+/* .c-content>.c-form{
     flex: 1;
  
   
-}
-.c-content>.contact-items{
-flex: 1;}
-.row{
+} */
+/* .c-content>.contact-items{
+flex: 1;} */
+.contact-row{
     display: flex;
     gap: 1rem;
 }
-.col{
+.contact-col{
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
 }
-.col>label{
+.contact-col>label{
     color: white;
 }
-.col>input{
+.contact-col>input{
     width: 100%;
     height: 2rem;
     outline: none;
@@ -706,7 +761,7 @@ flex: 1;}
     padding-left: 0.2rem;
     color: black;
 }
-.col>input:focus{
+.contact-col>input:focus{
    outline: 2px solid  #008000;
     width: 100%;
 
@@ -726,7 +781,7 @@ flex: 1;}
 .sub-c-items{
     background-color: white;
     border-radius: 5px;
-    width: fit-content;
+    width: 60%;
     padding: 1rem;
     color: #297229;
     display: flex;
@@ -745,13 +800,13 @@ flex: 1;}
     font-weight: bolder;
 }
 .items>img{
-    width:1.2rem;
-    height: 1.2rem;
+    width:1.4rem;
+    height: 1.4rem;
 }
 #c-tel{
-height: 1.2rem;
+height: 1.3rem;
 }
 hr{
     width: 100%;
-    border: 1px solid #64f464;
+    border: 2px solid #64f464;
 }
