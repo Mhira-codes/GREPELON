@@ -453,7 +453,7 @@ font: bold;
 }
 
 .col-1-overlay{
-    background-color:  rgba(102, 185, 102, 0.9);;
+    background-color:rgba(102, 185, 102, 0.9)  ;;
     width: 100%;
     height: 32rem;
     opacity:2;
@@ -462,8 +462,10 @@ font: bold;
   
 
 #contact-img-1{
+
     background-image: url(./images/emergency.png);
     background-repeat: no-repeat;
+    background-blend-mode: multiply;
     position: relative;
     flex: 1;
    
@@ -722,6 +724,8 @@ position:relative;
 position:relative;
   
 }
+
+
 .contact-page{
     margin-top: 4rem;
 }
@@ -748,7 +752,7 @@ flex: 1;} */
 .contact-col{
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.2rem;
 }
 .contact-col>label{
     color: white;
@@ -781,7 +785,8 @@ flex: 1;} */
 .sub-c-items{
     background-color: white;
     border-radius: 5px;
-    width: 60%;
+ margin-left: 5rem;
+ margin-right: 5rem;
     padding: 1rem;
     color: #297229;
     display: flex;
@@ -804,7 +809,7 @@ flex: 1;} */
     height: 1.4rem;
 }
 #c-tel{
-height: 1.3rem;
+height: 1.2rem;
 }
 hr{
     width: 100%;
